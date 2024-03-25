@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>6B</title>
+</head>
+<link rel="stylesheet" href="/main.css">
+  
+</style>
+  </head>
+  
+  <body>
+    <div class="birthdayCard">
+      <div class="cardFront">
+        <h3 class="happy">Class VI B</h3>
+        <h1 class="book-title">Thanking you</h1>
+        <div class="line"</div>
+        <div class="tap"
+        <b><p>tap the book to open</p></b>
+        </div>
+      </div>
+      <div class="cardInside">
+        <h3 class="back">Dear Lhea miss and Friends,</h3>
+        <p>wanted to say a big thank you to each of you.
+        
+        lhea, your guidance meant the world to me.
+        
+        To my friends, thanks for the laughs and support.</p>
+          <button onclick="openWebpage()" class="animated-button">more →</button>
+      </div>
+    </div>
+
+<script>
+function openWebpage() {
+    var newTab = window.open();
+    newTab.document.write(`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You Letters from Children to Teacher</title>
+    <link rel="stylesheet" href="/sub/webpage.css">
+</head>
+<body>
+    <div class="container-left">
+        <h1>A Heartfelt and Thank You for Your Mentorship</h1>
+    </div>
+
+    <div class="container-right">
+        <p>Dear Lhea miss,</p>
+    </div>
+
+    <div class="container-left">
+        <p>As you prepare to depart from our class and embark on a new journey, I wanted to take this opportunity to express my deepest gratitude for the profound impact you've had on our lives during your time here at st.julians school.</p>
+    </div>
+
+    <div class="container-right">
+        <p>On behalf of all the students of Class 6B, we would like to express our heartfelt gratitude for your dedicated teaching over the past year. As we reflect on the countless lessons, moments of guidance, and the immeasurable impact you've had on our academic and personal growth, we are compelled to convey our deepest appreciation through this letter.
+</p>
+    </div>
+
+    <!-- Additional containers -->
+    <div class="container-left">
+        <!-- Content for container 5 -->
+        Throughout this academic year, your unwavering commitment to excellence has served as an inspiration to each and every one of us. Your passion for teaching, combined with your profound knowledge of the subjects, has ignited a thirst for learning within us that extends far beyond the confines of the classroom. Your ability to make even the most complex concepts understandable and engaging has not only enhanced our academic performance but has also instilled in us a genuine love for learning.
+
+    </div>
+
+    <div class="container-right">
+        <!-- Content for container 6 -->
+                <p>we want to express our deepest gratitude for your unwavering dedication, passion, and commitment to our education. Your impact on our lives extends far beyond the classroom, and we will forever be grateful for the profound influence you have had on shaping our minds and hearts. Thank you for being an exceptional teacher, mentor, and role model.
+        
+                  With sincere appreciation,
+                </p>
+    </div>
+    <footer>
+    <div class="footer">
+      <div class="red"
+        <h3>create by students of students of class 6B</h3>
+        </div>
+        <div class="yellow"
+        <h3>thankyou for viewing this website full</h3>
+        </div>
+        <div class="yellow" 
+        <h4>click here to back to whatsapp</h4>
+        </div>
+        
+<button onclick="window.open('https://chat.whatsapp.com/', '_blank')" class="button-64" role="button">Back to whatsappp →</button>
+        </div>
+  </div>
+  </footer>
+
+    <script>
+// Select the container element
+const container = document.querySelector('#container');
+
+// Define the callback function
+const callback = (entries) => {
+  entries.forEach(entry => {
+    // Check if half of the container is visible
+    if(entry.intersectionRatio >= 0.5){
+      // If half is visible, add a class to return to the original position
+      container.classList.add('return-to-original');
+    } else {
+      // If less than half is visible, remove the class
+      container.classList.remove('return-to-original');
+    }
+  });
+};
+
+// Create the observer with the callback and options
+const observer = new IntersectionObserver(callback, {
+  threshold: 0.5 // Trigger when half of the container is visible
+});
+
+// Observe the container
+observer.observe(container);
+
+// CSS to define the original position
+.return-to-original {
+  transform: translateX(0); /* Adjust this to match your container's original position */
+}
+
+    <
+    `);
+    newTab.document.close(); // This will finish writing to the new tab
+}
+</script>
+  </body>

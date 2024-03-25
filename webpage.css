@@ -1,0 +1,191 @@
+ body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-image: url('/images/Picsart_24-03-23_14-11-58-415.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+    
+.container-left,
+.container-right {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0; /* Change opacity to 0 initially */
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container-right {
+    animation-delay: 1.5s; /* Delay for container-right */
+}
+
+.container-left:nth-child(3) {
+    animation-delay: 2.5s; /* Delay for container 3 */
+}
+
+.container-right:nth-child(4) {
+    animation-delay: 3.5s; /* Delay for container 4 */
+}
+
+.container-left:nth-child(5) {
+    animation-delay: 4.5s; /* Delay for container 5 */
+}
+
+.container-right:nth-child(6) {
+    animation-delay: 5.5s; /* Delay for container 6 */
+}
+
+.container-left:nth-child(7) {
+    animation-delay: 6.5s; /* Delay for container 7 */
+}
+
+.container-right:nth-child(8) {
+    animation-delay: 7.5s; /* Delay for container 8 */
+}
+
+.container-left:nth-child(9) {
+    animation-delay: 8.5s; /* Delay for container 9 */
+}
+
+.container-right:nth-child(10) {
+    animation-delay: 9.5s; /* Delay for container 10 */
+}
+
+.container-left:nth-child(11) {
+    animation-delay: 10.5s; /* Delay for container 11 */
+}
+
+.container-right:nth-child(12) {
+    animation-delay: 11.5s; /* Delay for container 12 */
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-left,
+    .container-right {
+        padding: 20px;
+    }
+}
+
+.unwanted-section {
+    position: absolute;
+    left: -9999px;
+    /* This moves the element far to the left, effectively hiding it */
+}
+.button-64 {
+align-items: center;
+background-image: linear-gradient(144deg,#F7FD02, #34FD02 50%,#02FDAA);
+border: 0;
+border-radius: 8px;
+box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+box-sizing: border-box;
+color: #FFFFFF;
+display: flex;
+font-family: Phantomsans, sans-serif;
+font-size: 20px;
+justify-content: center;
+line-height: 1em;
+max-width: 110%;
+min-width: 140px;
+height: 45px;
+padding: 3px;
+text-decoration: none;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+white-space: nowrap;
+cursor: pointer;
+margin-top: 40px;
+margin-left: 140px
+
+}
+
+.button-64:active,
+.button-64:hover {
+outline: 0;
+}
+
+.button-64 span {
+background-color: rgb(5, 6, 45);
+padding: 10px 5px;
+border-radius: 6px;
+width: 100%;
+height: 100%;
+transition: 300ms;
+
+}
+
+.button-64:hover span {
+background: none;
+color: black;
+}
+
+@media (min-width: 768px) {
+.button-64 {
+font-size: 24px;
+min-width: 196px;
+}
+}
+
+ .footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: black; /* Or any color you prefer */
+    color: white; /* Or any color you prefer */
+    text-align: left;;
+    padding: 10px 0;
+    margin-top: 10%;
+}
+
